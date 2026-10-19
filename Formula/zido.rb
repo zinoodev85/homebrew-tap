@@ -1,8 +1,8 @@
 class Zido < Formula
   desc "/todo skill for Claude Code: todos as Markdown folders in a git repo"
   homepage "https://github.com/zinoodev85/zido"
-  url "https://github.com/zinoodev85/zido/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "a9e7045e5b924dd88d2489651668cb01d6505cdc285ce9d4a11598f4b41efb34"
+  url "https://github.com/zinoodev85/zido/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "b5dc462f7b6d79411d627f72d33d66048c9e7735e48a44e8df4d8bc2f6b7f208"
   license "MIT"
 
   depends_on "python@3"
