@@ -1,5 +1,5 @@
 class Zido < Formula
-  desc "/todo and /kickoff skills for Claude Code: todos in git, research-backed session prompts"
+  desc "Claude Code skills: /todo in git and /kickoff session prompts"
   homepage "https://github.com/zinoodev85/zido"
   url "https://github.com/zinoodev85/zido/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "a543a0cc01a75f9017b3709fef696619757874e07b26476d1c3f93c9bffecb3c"
@@ -15,7 +15,7 @@ class Zido < Formula
 
   def caveats
     <<~EOS
-      Link the skill into Claude Code and create the todo repo (~/todos):
+      Link the skills into Claude Code and create the todo repo (~/todos):
         zido install
         zido init
     EOS
