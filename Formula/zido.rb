@@ -1,15 +1,15 @@
 class Zido < Formula
-  desc "/todo skill for Claude Code: todos as Markdown folders in a git repo"
+  desc "/todo and /kickoff skills for Claude Code: todos in git, research-backed session prompts"
   homepage "https://github.com/zinoodev85/zido"
-  url "https://github.com/zinoodev85/zido/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "b5dc462f7b6d79411d627f72d33d66048c9e7735e48a44e8df4d8bc2f6b7f208"
+  url "https://github.com/zinoodev85/zido/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "a543a0cc01a75f9017b3709fef696619757874e07b26476d1c3f93c9bffecb3c"
   license "MIT"
 
   depends_on "python@3"
 
   def install
-    pkgshare.install "skill"
-    inreplace "bin/zido", "@SKILL_DIR@", "#{opt_pkgshare}/skill"
+    pkgshare.install "skills"
+    inreplace "bin/zido", "@SKILLS_DIR@", "#{opt_pkgshare}/skills"
     bin.install "bin/zido"
   end
 
@@ -23,6 +23,6 @@ class Zido < Formula
 
   test do
     assert_equal version.to_s, shell_output("#{bin}/zido version").strip
-    assert_path_exists pkgshare/"skill/SKILL.md"
+    assert_path_exists pkgshare/"skills/todo/SKILL.md"
   end
 end
